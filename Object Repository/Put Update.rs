@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;fullName\&quot; : \&quot;Syarif Ridhohidayatulloh\&quot;,\n  \&quot;nickName\&quot; : \&quot;Syarif\&quot;,\n  \&quot;job\&quot; : \&quot;QA Engineer\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;${update}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -27,7 +27,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${GlobalVariable.baseURL}/api/users/3</restUrl>
+   <restUrl>${url}api/users/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -36,6 +36,27 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.baseUrl</defaultValue>
+      <description></description>
+      <id>50aaeb61-550c-41e1-a316-b1015cfa8689</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.id</defaultValue>
+      <description></description>
+      <id>55bddc1a-0e69-493d-b680-8e55ed109a26</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.update</defaultValue>
+      <description></description>
+      <id>819dc4eb-cf80-41df-a069-0e8004269ae4</id>
+      <masked>false</masked>
+      <name>update</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

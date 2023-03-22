@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;data\&quot;: {\n        \&quot;email\&quot;: \&quot;sharif.ridho@gmail.com\&quot;,\n        \&quot;first_name\&quot;: \&quot;Syarif\&quot;,\n        \&quot;last_name\&quot;: \&quot;Ridho\&quot;,\n        \&quot;avatar\&quot;: \&quot;https://reqres.in/img/faces/2-image.jpg\&quot;\n    },\n    \&quot;support\&quot;: {\n        \&quot;url\&quot;: \&quot;https://reqres.in/#support-heading\&quot;,\n        \&quot;text\&quot;: \&quot;Hello im position QA Engineer!\&quot;\n    }\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;email\&quot;: \&quot;${email}\&quot;,\n    \&quot;password\&quot;: \&quot;${password}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -27,7 +27,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.baseURL}/api/users</restUrl>
+   <restUrl>${url}/api/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -36,6 +36,27 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.baseUrl</defaultValue>
+      <description></description>
+      <id>e7d6d057-5a67-4834-a6cd-31ae0193db5c</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.email</defaultValue>
+      <description></description>
+      <id>01dc78b9-dbde-42e2-aa80-6286100adeef</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.password</defaultValue>
+      <description></description>
+      <id>4a63daac-62b9-4a50-930a-13fb574035ec</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -49,6 +70,7 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -7,11 +7,41 @@
    <GlobalVariableEntity>
       <description>Global Variable URL Testing</description>
       <initValue>'https://reqres.in/'</initValue>
-      <name>baseURL</name>
+      <name>baseUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'200'</initValue>
       <name>successCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>page</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'{\r\n    &quot;name&quot;: &quot;Syarif Ridho&quot;,\r\n    &quot;job&quot;: &quot;QA Engineer&quot;\r\n}'</initValue>
+      <name>update</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>2</initValue>
+      <name>id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'pistol'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'{\r\n    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,\r\n    &quot;password&quot;: &quot;pistol&quot;\r\n}'</initValue>
+      <name>register</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -12,28 +12,28 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>5c2a2b36-7447-4e87-a708-dcbaa42cfb17</testSuiteGuid>
    <testCaseLink>
-      <guid>65a04c44-e2b4-4729-a96e-4e855294055e</guid>
+      <guid>5b911ffb-4c86-4e00-a410-cecd5a96ba3d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Get List Users</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4ab88fab-c35d-414a-b103-b1a34b79089d</guid>
+      <guid>93678853-a06a-43f2-8681-cee547be2a7e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Get Single Users</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>88524045-fe3f-4ce7-a6f0-b430ace4566a</guid>
+      <guid>e9c84c73-84bd-4ba4-b356-4de1adb136a8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Put Update</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e5eb28e8-932a-49f7-9114-8e2eeeecfff0</guid>
+      <guid>b60d187a-cb61-4963-b942-0f529e41bff2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Post Register Successfull</testCaseId>

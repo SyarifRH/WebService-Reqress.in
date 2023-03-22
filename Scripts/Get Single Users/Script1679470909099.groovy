@@ -17,12 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Get Single Users'))
+response = WS.sendRequest(findTestObject('Get Single Users', [('url') : GlobalVariable.baseUrl, ('id') : GlobalVariable.id]))
 
 WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, 'data.id', 2)
-WS.verifyElementPropertyValue(response, 'data.email', "janet.weaver@reqres.in")
-WS.verifyElementPropertyValue(response, 'data.first_name', "Janet")
-WS.verifyElementPropertyValue(response, 'data.last_name', "Weaver")
+
+WS.verifyElementPropertyValue(response, 'data.email', 'janet.weaver@reqres.in')
+
+WS.verifyElementPropertyValue(response, 'data.first_name', 'Janet')
+
+WS.verifyElementPropertyValue(response, 'data.last_name', 'Weaver')
 

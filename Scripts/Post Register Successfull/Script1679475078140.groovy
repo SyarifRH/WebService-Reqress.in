@@ -17,13 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Post Register Successfull'))
+response = WS.sendRequest(findTestObject('Get Single Users', [('url') : GlobalVariable.baseUrl, ('id') : GlobalVariable.id]))
 
-WS.verifyResponseStatusCode(response, 201)
-WS.verifyElementPropertyValue(response, 'data.email', "sharif.ridho@gmail.com")
-WS.verifyElementPropertyValue(response, 'data.first_name', "Syarif")
-WS.verifyElementPropertyValue(response, 'data.last_name', "Ridho")
-WS.verifyElementPropertyValue(response, 'data.avatar', "https://reqres.in/img/faces/2-image.jpg")
-WS.verifyElementPropertyValue(response, 'support.url', "https://reqres.in/#support-heading")
-WS.verifyElementPropertyValue(response, 'support.text', "Hello im position QA Engineer!")
+data = WS.getElementPropertyValue(response, 'data.email')
+
+println('value is :' + data)
+
+GlobalVariable.email = data
+
+response2 = WS.sendRequest(findTestObject('Post Register Successfull', [('url') : GlobalVariable.baseUrl, ('email') : GlobalVariable.email
+            , ('password') : GlobalVariable.password]))
+
+WS.verifyResponseStatusCode(response2, 200)
+
+WS.verifyElementPropertyValue(response2, 'id', 2)
 
