@@ -44,4 +44,34 @@
       <initValue>'{\r\n    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,\r\n    &quot;password&quot;: &quot;pistol&quot;\r\n}'</initValue>
       <name>register</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'@!;+dS'</initValue>
+      <name>specialCharPage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'@!;+dS'</initValue>
+      <name>specialCharID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>2023</initValue>
+      <name>doublePage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>-2023</initValue>
+      <name>doubleMinusPage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>2023</initValue>
+      <name>doubleID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>-2023</initValue>
+      <name>doubleMinusID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

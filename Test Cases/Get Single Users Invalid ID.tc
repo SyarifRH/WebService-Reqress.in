@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative Case</description>
+   <name>Get Single Users Invalid ID</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b328a87f-6b85-4801-bd09-875caebb4251</testCaseGuid>
+</TestCaseEntity>
