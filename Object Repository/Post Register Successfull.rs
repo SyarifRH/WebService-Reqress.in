@@ -9,13 +9,25 @@
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;data\&quot;: {\n        \&quot;email\&quot;: \&quot;sharif.ridho@gmail.com\&quot;,\n        \&quot;first_name\&quot;: \&quot;Syarif\&quot;,\n        \&quot;last_name\&quot;: \&quot;Ridho\&quot;,\n        \&quot;avatar\&quot;: \&quot;https://reqres.in/img/faces/2-image.jpg\&quot;\n    },\n    \&quot;support\&quot;: {\n        \&quot;url\&quot;: \&quot;https://reqres.in/#support-heading\&quot;,\n        \&quot;text\&quot;: \&quot;Hello im position QA Engineer!\&quot;\n    }\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>c0918723-39f8-43ec-b33c-4445ce61b5c6</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable}/api/users</restUrl>
+   <restUrl>${GlobalVariable.baseURL}/api/users</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -36,6 +48,7 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
