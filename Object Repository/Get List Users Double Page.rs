@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>Negative Test Case</description>
+   <description>Negative Case</description>
    <name>Get List Users Double Page</name>
    <tag></tag>
    <elementGuidId>ec38acbc-7a97-41b4-9f7e-819c2dc67b70</elementGuidId>

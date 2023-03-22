@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>Email value taken from GET single user response</description>
+   <description>Positive Case</description>
    <name>Post Register Successfull</name>
    <tag></tag>
    <elementGuidId>ed9e4ff3-e4e0-4f06-9dab-4b536d532482</elementGuidId>

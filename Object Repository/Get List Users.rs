@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
-   <description>using request: /api/users?page=1</description>
+   <description>Positive Case</description>
    <name>Get List Users</name>
    <tag></tag>
    <elementGuidId>180e2ae8-7e96-4f32-88f0-00e0c7fa658e</elementGuidId>

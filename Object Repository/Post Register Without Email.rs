@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>Negative Case</description>
-   <name>Get List Users Minus Double Page</name>
+   <name>Post Register Without Email</name>
    <tag></tag>
-   <elementGuidId>471a6f03-1230-4cd9-bfbd-fe53649cdb11</elementGuidId>
+   <elementGuidId>59c9ad02-8048-4704-83d9-1fc3a9f5058b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;${withOutEmail}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>6c771f99-0e40-4ad2-b67a-21be06a21d68</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/api/users/${doubleMinusPage}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${url}api/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -27,16 +39,16 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>b63f26ee-9ba4-47f6-9ed9-f27f8380f345</id>
+      <id>b0161e34-a7fa-4e64-93db-f9589cc23b3d</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.doubleMinusPage</defaultValue>
+      <defaultValue>GlobalVariable.withOutEmail</defaultValue>
       <description></description>
-      <id>c21e2ed8-b013-495d-b996-19aa9203e46f</id>
+      <id>961d75d2-431f-48c1-abb9-bac0a7ea3bcc</id>
       <masked>false</masked>
-      <name>doubleMinusPage</name>
+      <name>withOutEmail</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

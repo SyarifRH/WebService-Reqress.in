@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>Negative Case</description>
-   <name>Get List Users Minus Double Page</name>
+   <name>Post Register Without Body</name>
    <tag></tag>
-   <elementGuidId>471a6f03-1230-4cd9-bfbd-fe53649cdb11</elementGuidId>
+   <elementGuidId>b95f2772-b1c2-49ca-a1dc-8e988d2e3deb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>ccb56cd2-f800-4719-90bd-89171691620b</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/api/users/${doubleMinusPage}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${url}api/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -27,16 +39,9 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>b63f26ee-9ba4-47f6-9ed9-f27f8380f345</id>
+      <id>f298f5d2-542f-49a4-9408-bda67a31a4fe</id>
       <masked>false</masked>
       <name>url</name>
-   </variables>
-   <variables>
-      <defaultValue>GlobalVariable.doubleMinusPage</defaultValue>
-      <description></description>
-      <id>c21e2ed8-b013-495d-b996-19aa9203e46f</id>
-      <masked>false</masked>
-      <name>doubleMinusPage</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

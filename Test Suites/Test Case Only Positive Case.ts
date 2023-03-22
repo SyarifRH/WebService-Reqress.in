@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description></description>
-   <name>Test Suites</name>
+   <description>Test Case Only Positive Case</description>
+   <name>Test Case Only Positive Case</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,33 +10,33 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>5c2a2b36-7447-4e87-a708-dcbaa42cfb17</testSuiteGuid>
+   <testSuiteGuid>874e8a16-15ac-4b1b-832e-69cee0fdfa86</testSuiteGuid>
    <testCaseLink>
-      <guid>5b911ffb-4c86-4e00-a410-cecd5a96ba3d</guid>
+      <guid>e0370c59-63b0-4355-a6e5-1a75efaeacb2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Get List Users</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>93678853-a06a-43f2-8681-cee547be2a7e</guid>
+      <guid>31ac9291-eb6f-465d-9211-ca697707a62f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Get Single Users</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e9c84c73-84bd-4ba4-b356-4de1adb136a8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Put Update</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b60d187a-cb61-4963-b942-0f529e41bff2</guid>
+      <guid>1fd3a6fa-5ac3-4f5e-8e56-bb6c9dcc7078</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Post Register Successfull</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a81d567d-467a-470f-9946-8b09cb9bfffb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Put Update</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

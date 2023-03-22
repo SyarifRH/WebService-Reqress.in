@@ -17,18 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Failed, because ID Double or ID is not yet available'
-response1 = WS.sendRequest(findTestObject('Get Single Users Double ID', [('url') : GlobalVariable.baseUrl, ('doubleID') : GlobalVariable.doubleID]))
+'The response failed because the json code doesn\'t have the correct value'
+response1 = WS.sendRequest(findTestObject('Post Register Without Body', [('url') : GlobalVariable.baseUrl]))
 
-WS.verifyResponseStatusCode(response1, 404)
+WS.verifyResponseStatusCode(response1, 400)
 
-'Failed, because ID Minus Double or only a value of 0, at least not minus'
-response2 = WS.sendRequest(findTestObject('Get Single Users Minus Double ID', [('url') : GlobalVariable.baseUrl, ('doubleMinusID') : GlobalVariable.doubleMinusID]))
+WS.verifyElementPropertyValue(response1, 'error', 'Missing email or username')
 
-WS.verifyResponseStatusCode(response2, 404)
+'The response failed because the json code doesn\'t have an email value'
+response2 = WS.sendRequest(findTestObject('Post Register Without Email', [('url') : GlobalVariable.baseUrl, ('withOutEmail') : GlobalVariable.withOutEmail]))
 
-'Failed, because ID uses a special character or random char'
-response2 = WS.sendRequest(findTestObject('Get Single Users Spesical Character ID', [('url') : GlobalVariable.baseUrl, ('specialCharID') : GlobalVariable.specialCharID]))
+WS.verifyResponseStatusCode(response2, 400)
 
-WS.verifyResponseStatusCode(response2, 404)
+WS.verifyElementPropertyValue(response2, 'error', 'Missing email or username')
+
+'The response failed because the json code doesn\'t have an password value'
+response3 = WS.sendRequest(findTestObject('Post Register Without Password', [('url') : GlobalVariable.baseUrl, ('withOutPassword') : GlobalVariable.withOutPassword]))
+
+WS.verifyResponseStatusCode(response3, 400)
+
+WS.verifyElementPropertyValue(response3, 'error', 'Missing password')
 

@@ -74,4 +74,14 @@
       <initValue>-2023</initValue>
       <name>doubleMinusID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'{\r\n    &quot;password&quot;: &quot;pistol&quot;\r\n}'</initValue>
+      <name>withOutEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'{\r\n    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;\r\n}'</initValue>
+      <name>withOutPassword</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

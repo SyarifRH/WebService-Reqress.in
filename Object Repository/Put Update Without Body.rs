@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>Negative Case</description>
-   <name>Get List Users Minus Double Page</name>
+   <name>Put Update Without Body</name>
    <tag></tag>
-   <elementGuidId>471a6f03-1230-4cd9-bfbd-fe53649cdb11</elementGuidId>
+   <elementGuidId>cb2e78bc-9e9d-44de-92bb-ddcfb7857f20</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -14,8 +14,8 @@
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/api/users/${doubleMinusPage}</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${url}api/users/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -27,16 +27,16 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>b63f26ee-9ba4-47f6-9ed9-f27f8380f345</id>
+      <id>ebfaa877-f965-426d-991a-a018c05f3658</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.doubleMinusPage</defaultValue>
+      <defaultValue>GlobalVariable.id</defaultValue>
       <description></description>
-      <id>c21e2ed8-b013-495d-b996-19aa9203e46f</id>
+      <id>9e6123f4-62d2-4987-ad17-07e1296ebadb</id>
       <masked>false</masked>
-      <name>doubleMinusPage</name>
+      <name>id</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

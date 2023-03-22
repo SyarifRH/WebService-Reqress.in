@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description>Negative Case</description>
-   <name>Get List Users Minus Double Page</name>
+   <name>Post Register Without Password</name>
    <tag></tag>
-   <elementGuidId>471a6f03-1230-4cd9-bfbd-fe53649cdb11</elementGuidId>
+   <elementGuidId>a7314bb5-3d26-477c-b55e-8d3c92446112</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;${withOutPassword}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>8761b997-54cf-4d18-b059-4ceea1c5708f</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/api/users/${doubleMinusPage}</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${url}/api/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -27,16 +39,16 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>b63f26ee-9ba4-47f6-9ed9-f27f8380f345</id>
+      <id>c415b67d-68c2-4773-a1ac-4c72fbe086af</id>
       <masked>false</masked>
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.doubleMinusPage</defaultValue>
+      <defaultValue>GlobalVariable.withOutPassword</defaultValue>
       <description></description>
-      <id>c21e2ed8-b013-495d-b996-19aa9203e46f</id>
+      <id>4c409a00-63e1-4fa5-a889-4a98784b46f2</id>
       <masked>false</masked>
-      <name>doubleMinusPage</name>
+      <name>withOutPassword</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

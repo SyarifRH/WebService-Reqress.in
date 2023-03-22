@@ -17,18 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Failed, because ID Double or ID is not yet available'
-response1 = WS.sendRequest(findTestObject('Get Single Users Double ID', [('url') : GlobalVariable.baseUrl, ('doubleID') : GlobalVariable.doubleID]))
+'Failed because the response was successful and what was expected did not match expectations or failed'
+response = WS.sendRequest(findTestObject('Put Update Without Body', [('url') : GlobalVariable.baseUrl, ('id') : GlobalVariable.id]))
 
-WS.verifyResponseStatusCode(response1, 404)
-
-'Failed, because ID Minus Double or only a value of 0, at least not minus'
-response2 = WS.sendRequest(findTestObject('Get Single Users Minus Double ID', [('url') : GlobalVariable.baseUrl, ('doubleMinusID') : GlobalVariable.doubleMinusID]))
-
-WS.verifyResponseStatusCode(response2, 404)
-
-'Failed, because ID uses a special character or random char'
-response2 = WS.sendRequest(findTestObject('Get Single Users Spesical Character ID', [('url') : GlobalVariable.baseUrl, ('specialCharID') : GlobalVariable.specialCharID]))
-
-WS.verifyResponseStatusCode(response2, 404)
-
+WS.verifyResponseStatusCode(response, 400)

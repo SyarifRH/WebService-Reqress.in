@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>Negative Case</description>
-   <name>Get List Users Invalid Page</name>
+   <name>Put Update Without Body</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d8e165a7-6418-4a31-b2b0-cf8561381d7c</testCaseGuid>
+   <testCaseGuid>b9113012-6a60-40ee-8bff-7dd0ee680b82</testCaseGuid>
 </TestCaseEntity>
