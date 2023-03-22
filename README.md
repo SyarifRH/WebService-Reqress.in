@@ -3,6 +3,8 @@ URL : [Reqress](https://reqres.in/)
 
 Testing Web Services Using [Katalon Studio](https://www.katalon.com) and integration with [Github](https://github.com/).
 
+![Katalon Studio](https://img.shields.io/badge/-katalon-000000?style=for-the-badge&logo=katalon)
+![Github](https://img.shields.io/badge/-github-000000?style=for-the-badge&logo=github)
 
 ### Component  Products
 
